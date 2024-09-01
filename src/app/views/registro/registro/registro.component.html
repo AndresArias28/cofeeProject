@@ -1,0 +1,76 @@
+<h1 class="p-1 text-center">Registro usuarios nuevos</h1>
+<!-- formulario.component.html -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="form-container">
+          <h2 class="text-center mb-4">Registro de Usuario</h2>
+          <form [formGroup]="registroForm" (ngSubmit)="onSubmit()">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres" formControlName="nombres" required>
+              </div>
+              <div class="col-md-6">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" formControlName="apellidos" required>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" formControlName="password" required>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Fecha de Nacimiento</label>
+              <div class="row">
+                <div class="col">
+                  <select class="form-select" id="dia" formControlName="dia" required>
+                    <option value="">Día</option>
+                    <option *ngFor="let dia of dias" [value]="dia">{{dia}}</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select class="form-select" id="mes" formControlName="mes" required>
+                    <option value="">Mes</option>
+                    <option *ngFor="let mes of meses" [value]="mes.value">{{mes.nombre}}</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select class="form-select" id="anio" formControlName="anio" required>
+                    <option value="">Año</option>
+                    <option *ngFor="let anio of anios" [value]="anio">{{anio}}</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label class="form-label">Ubicación de la Finca</label>
+              <div class="row mb-2">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="ciudad" formControlName="ciudad" placeholder="Ciudad" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="corregimiento" formControlName="corregimiento" placeholder="Corregimiento" required>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="vereda" formControlName="vereda" placeholder="Vereda" required>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg" [disabled]="!registroForm.valid">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
