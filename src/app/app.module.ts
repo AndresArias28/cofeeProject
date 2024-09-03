@@ -8,6 +8,8 @@ import { InicioComponent } from './views/inicio/inicio/inicio.component';
 import { RegistroComponent } from './views/registro/registro/registro.component';
 import { ContactoComponent } from './views/contacto/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './views/footer/footer.component';
+import { PersonalProfileComponent } from './views/personal-profile/personal-profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     InicioComponent,
     RegistroComponent,
-    ContactoComponent
+    ContactoComponent,
+    FooterComponent,
+    PersonalProfileComponent
   ],
   imports: [
     BrowserModule,

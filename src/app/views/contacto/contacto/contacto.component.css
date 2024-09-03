@@ -1,4 +1,43 @@
+body {
+    background-color: #f2e8dc; /* Un color claro para el fondo */
+    background-image: url("../../../../assets/img/cont.jpg");
+    background-position: center;
+    color: #333333; /* Un color oscuro para el texto */
+}
 
+.form-container {
+    background-color: #ffffff; /* Un color blanco para el fondo del contenedor del formulario */
+    background-color: rgba(255, 255, 255, 0.9); /* Transparencia ligera para el contenedor */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.form-control, .form-select {
+    background-color: #f0f0f0; /* Un gris claro para los campos del formulario */
+    background-color: rgba(240, 240, 240, 0.9); /* Transparencia ligera para los campos del formulario */
+    border: none;
+    color: #333333; /* Color oscuro para el texto dentro de los campos */
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #e0e0e0; /* Fondo ligeramente más oscuro al enfocar */
+    box-shadow: none;
+    border-color: #cccccc; /* Un gris claro para el borde al enfocar */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Un color azul para el botón primario */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Un tono más oscuro del azul al pasar el ratón */
+}
+
+
+
+/* 
 body {
     background-color: #9b2222;
     background-image: url("../../../../assets/img/cont.jpg");
@@ -31,4 +70,7 @@ body {
 }
 .btn-primary:hover {
     background-color: #5a5a5a;
-}
+} */
+
+
+

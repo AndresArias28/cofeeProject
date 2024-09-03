@@ -29,3 +29,18 @@
     padding: 10px 70px ;
     text-align: justify;
 }
+
+.palabra{
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 36px; /* Tamaño grande */
+    color: #8B4513; /* Color marrón, similar al café */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    background: linear-gradient(to right, #f5deb3, #cd853f); /* Degradado de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    text-align: center; /* Alineación centrada */
+    display: inline-block; /* Evita que el div ocupe el ancho completo */
+}
