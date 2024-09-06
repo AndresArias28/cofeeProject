@@ -62,6 +62,88 @@
                     </button>
                 </div>
             </div>
+            <div class="container mt-4">
+                <table class="table table-bordered">
+                  <thead class="table-light">
+                    <tr>
+                      <th scope="col">Métrica</th>
+                      <th scope="col">Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let metric of profile.metrics">
+                      <td>{{ metric.name }}</td>
+                      <td>{{ metric.description }}</td>
+                    </tr>
+                    <tr>
+                      <td>Temperatura</td>
+                      <td>La temperatura promedio en la finca, que afecta el crecimiento del café.</td>
+                    </tr>
+                    <tr>
+                      <td>Humedad del suelo</td>
+                      <td>Nivel de humedad en el suelo, importante para el riego.</td>
+                    </tr>
+                    <tr>
+                      <td>pH del suelo</td>
+                      <td>Medida de acidez o alcalinidad del suelo.</td>
+                    </tr>
+                    <tr>
+                      <td>Textura del suelo</td>
+                      <td>Composición del suelo en términos de arcilla, limo, y arena.</td>
+                    </tr>
+                    <tr>
+                      <td>Inclinación del terreno</td>
+                      <td>La pendiente del terreno, que puede influir en la erosión y exposición solar.</td>
+                    </tr>
+                    <tr>
+                      <td>Exposición solar</td>
+                      <td>Cantidad de luz solar que recibe la finca.</td>
+                    </tr>
+                    <tr>
+                      <td>Nivel de sombra</td>
+                      <td>Grado de sombra bajo el cual crecen las plantas de café.</td>
+                    </tr>
+                    <tr>
+                      <td>Velocidad y dirección del viento</td>
+                      <td>Impacto del viento en la finca, que puede afectar la salud de las plantas.</td>
+                    </tr>
+                    <tr>
+                      <td>Niveles de nutrientes en el suelo</td>
+                      <td>Concentración de nutrientes esenciales para el crecimiento del café.</td>
+                    </tr>
+                    <tr>
+                      <td>Frecuencia y cantidad de lluvias</td>
+                      <td>Cantidad de agua recibida a través de la lluvia.</td>
+                    </tr>
+                    <tr>
+                      <td>Presencia de plagas y enfermedades</td>
+                      <td>Monitoreo de plagas y enfermedades que puedan afectar el cultivo.</td>
+                    </tr>
+                    <tr>
+                      <td>Contenido de materia orgánica</td>
+                      <td>Nivel de materia orgánica en el suelo, que afecta su fertilidad.</td>
+                    </tr>
+                    <tr>
+                      <td>Conductividad eléctrica del suelo</td>
+                      <td>Nivel de sales en el suelo, medido por la conductividad eléctrica.</td>
+                    </tr>
+                    <tr>
+                      <td>Índice de área foliar</td>
+                      <td>Medida de la cantidad de área foliar disponible para la fotosíntesis.</td>
+                    </tr>
+                    <tr>
+                      <td>Altura de la planta y desarrollo del dosel</td>
+                      <td>Indicadores de la salud y el crecimiento de las plantas de café.</td>
+                    </tr>
+                    <tr>
+                      <td>Tiempo de floración y maduración</td>
+                      <td>Duración de las etapas clave en el ciclo de vida de la planta.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+
         </div>
     </div>
 
