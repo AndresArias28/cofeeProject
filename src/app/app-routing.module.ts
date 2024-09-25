@@ -4,6 +4,7 @@ import { InicioComponent } from './views/inicio/inicio/inicio.component';
 import { RegistroComponent } from './views/registro/registro/registro.component';
 import { ContactoComponent } from './views/contacto/contacto/contacto.component';
 import { PersonalProfileComponent } from './views/personal-profile/personal-profile.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
 
@@ -11,8 +12,8 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'profile-main', component: PersonalProfileComponent },
-
 
 ];
 
